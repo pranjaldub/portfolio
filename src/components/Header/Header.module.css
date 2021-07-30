@@ -12,6 +12,7 @@
 	padding:20px;
 	animation: slider 1.4s ease-in both;
 }
+
 .navbar:hover{height:6em;}
 
 .headerElements{
@@ -35,24 +36,7 @@
  span:hover{color:darkturquoise;transition: ease-in 0.5s;background-color: white;animation: hover 0.2s ease-in both}
 
 
- @media (min-width: 640em) {
-	.navbar{
-	
-		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1004)'%3e%3c/rect%3e%3cpath d='M1560 560L0 560 L0 308.08Q67.64 255.72%2c 120 323.36Q181.56 312.93%2c 192 374.49Q235.3 297.79%2c 312 341.09Q359.05 268.13%2c 432 315.18Q477.68 240.86%2c 552 286.53Q643.59 258.12%2c 672 349.71Q743.2 300.91%2c 792 372.11Q808.1 268.21%2c 912 284.31Q984.04 236.35%2c 1032 308.38Q1062.91 267.29%2c 1104 298.21Q1171.15 293.36%2c 1176 360.51Q1216.53 281.04%2c 1296 321.57Q1311.74 265.31%2c 1368 281.04Q1410.22 251.26%2c 1440 293.49Q1532.9 266.39%2c 1560 359.29z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 373.07Q74.44 327.51%2c 120 401.96Q188.19 350.14%2c 240 418.33Q256.7 363.03%2c 312 379.73Q366.67 314.4%2c 432 369.08Q482.56 299.63%2c 552 350.19Q603.66 329.85%2c 624 381.51Q675.52 361.03%2c 696 412.56Q710.81 355.37%2c 768 370.17Q833.54 315.71%2c 888 381.25Q962.28 335.53%2c 1008 409.81Q1054.77 384.58%2c 1080 431.35Q1105.6 336.95%2c 1200 362.54Q1247.02 337.56%2c 1272 384.59Q1354.11 346.69%2c 1392 428.8Q1398.8 363.6%2c 1464 370.39z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 456.52Q59.92 396.44%2c 120 456.35Q161.69 426.04%2c 192 467.73Q208.78 412.51%2c 264 429.3Q331.55 376.85%2c 384 444.39Q449.56 437.95%2c 456 503.52Q476.74 404.25%2c 576 424.99Q649.27 378.26%2c 696 451.54Q759.88 443.43%2c 768 507.31Q785.5 452.81%2c 840 470.32Q884.19 394.51%2c 960 438.7Q1018.12 424.81%2c 1032 482.93Q1073.7 452.63%2c 1104 494.33Q1173.09 443.41%2c 1224 512.5Q1241.44 409.94%2c 1344 427.38Q1409.43 372.81%2c 1464 438.24z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M1512 560L0 560 L0 554.61Q30.83 465.44%2c 120 496.28Q195.96 452.24%2c 240 528.19Q316.6 484.79%2c 360 561.39Q361.15 490.54%2c 432 491.69Q468.11 455.8%2c 504 491.91Q591.14 459.05%2c 624 546.19Q699.66 501.85%2c 744 577.51Q757.52 519.03%2c 816 532.55Q833.9 478.45%2c 888 496.35Q954.6 442.95%2c 1008 509.55Q1075.83 457.38%2c 1128 525.21Q1184.99 510.2%2c 1200 567.19Q1230.15 477.34%2c 1320 507.49Q1363.32 478.81%2c 1392 522.12Q1461.05 471.17%2c 1512 540.22z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1004'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
-		border-radius: 20px;
-		height:2.5em;
-		display: inline;
-		padding:2px;
-		animation: slider 1.4s ease-in both;
-		
- }
- .headerElements{
-	padding : 7px;
-	color:white;
-	font-size: 1.8vw;
-	
-}}
-
+ 
 svg text {
 	font-family:'Courier New', Courier, monospace;
 	letter-spacing: 7px;
@@ -120,3 +104,50 @@ transform: scale(1,1) translate(0px, 0px);
  animation: bounce 2s infinite;
  border-radius: 30px;
 }
+
+@media (max-width: 640em) {
+	.navbar{
+	
+		display:none;
+		padding:0px;
+		
+
+		
+		
+ }
+ .back{height:100vh}
+ svg text {
+	font-family:'Courier New', Courier, monospace;
+	letter-spacing: 1px;
+	stroke: #f1f2f5;
+	font-size: 4em;
+	font-weight: 700;
+	stroke-width: 3;
+	align-self: center;
+	align-content: center;
+	animation: textAnimate 4s infinite alternate-reverse ;
+
+	
+	
+	
+  }
+  .intro{padding: 2px ; width:100%;align-content: center;height:100%}
+
+  .sideText{font-size: 5em;color: white;padding-left: 2em;align-content: center;}
+  .sideTexth2{font-size: 2em;color: white;bottom:10px;align-self: center;padding-right: 5em;}
+  .bounce {
+	text-align:center;
+	
+	margin:20px ;
+	margin-top:50px;
+	height:20px;
+	width:360px;
+	  
+	
+	background:rgb(250, 250, 251);
+   animation: bounce 2s infinite;
+   border-radius: 30px;
+   align-self: center;
+   margin-left: 14em;
+  }
+ }
