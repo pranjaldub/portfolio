@@ -71,7 +71,7 @@
  .card:hover > .content{color:black;font-weight: 600;zoom:110%}
 
 
- @media (max-width : 640em){
+ @media (min-width: 768px) and (max-width: 1000px){
   .heading{color:white ; padding:40px;font: 3em sans-serif;}
   .heading h2{font-size: 1em;}
   .underline{width: 60%;height:10px;border-top: 10px solid white;border-radius: 30px;}
