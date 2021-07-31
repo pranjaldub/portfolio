@@ -16,7 +16,7 @@
 .navbar:hover{height:6em;}
 
 .headerElements{
-	padding : 30px;
+	padding : 10px;
 	color:white;
 	font-size: 2vw;
 	
@@ -109,7 +109,7 @@ transform: scale(1,1) translate(0px, 0px);
 	.navbar{
 	
 		display:none;
-		padding:0px;
+		
 
 
 		
@@ -125,27 +125,31 @@ transform: scale(1,1) translate(0px, 0px);
 	font-size: 2em;
 	font-weight: 300;
 	stroke-width: 3;
-	
+	left:10px;
+	position: absolute;
 	animation: textAnimate 4s infinite alternate-reverse ;
 	margin-left: 10px;
-	padding-left: 10px;
-	position:static;
+	padding: 10px;
+	
+	
+	
 
 	
 	
 	
   }
+  svg{width: 100%;align-content: center;padding:20px}
   .intro{padding: 0.5px ; width:360px;align-content: center;height:100%}
 
-  .sideText{font-size: 3em;color: white;padding-left: 1em;align-content: right;align-self: center;}
-  .sideTexth2{font-size: 1em;color: white;bottom:10px;}
+  .sideText{font-size: 3em;color: white;padding-left: 1em;align-content: right;align-self: center;padding-top: 30px;position: absolute;}
+  .sideTexth2{font-size: 1em;color: white;bottom:10px;left:-50px;top:-20px}
   .bounce {
 	text-align:center;
 	
 	
 	margin-top:50px;
 	height:20px;
-	padding-right: 1em;
+	padding-right: 2em;
 	
 	  
 	
@@ -153,7 +157,7 @@ transform: scale(1,1) translate(0px, 0px);
    animation: bounce 2s infinite;
    border-radius: 30px;
    align-self: center;
-   margin-left: 4em;
+   margin-left: 1em;
   }
   
  }
