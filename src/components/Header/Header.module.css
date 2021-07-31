@@ -105,17 +105,19 @@ transform: scale(1,1) translate(0px, 0px);
  border-radius: 30px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 	.navbar{
 	
 		display:none;
 		padding:0px;
-		
+
 
 		
 		
  }
- .back{height:100vh}
+ 
+
+ .back{height:100vh; }
  svg text {
 	font-family:'Courier New', Courier, monospace;
 	letter-spacing: 1px;

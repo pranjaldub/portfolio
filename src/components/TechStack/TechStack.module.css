@@ -71,7 +71,7 @@
  .card:hover > .content{color:black;font-weight: 600;zoom:110%}
 
 
- @media (min-width: 768px) and (max-width: 900px){
+ @media (max-width: 1000px){
   .heading{color:white ; padding:40px;font: 3em sans-serif;}
   .heading h2{font-size: 1em;}
   .underline{width: 60%;height:10px;border-top: 10px solid white;border-radius: 30px;}
@@ -93,19 +93,21 @@
       top: 60px;
       
       display: inline-block;
+      align-items:center;
     }
     
     .card {
       display: inline-block;
       height: auto;
     
-      width: 70%;
-      
+      width: 85%;
+      align-content:center;
       background-color: #17141d;
       border-radius: 10px;
       box-shadow: -1rem 0 3rem #000;
     margin-left: 50px; 
       transition: 0.4s ease-out;
+      align-items:center;
      
       left: 20px;
       padding-bottom: 20px;
@@ -135,6 +137,7 @@
       position: absolute;
       left: 20px;
       top: 15px;
+      align-self:center
     }
     
   

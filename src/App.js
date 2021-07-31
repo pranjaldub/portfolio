@@ -11,7 +11,7 @@ function App() {
       <Header></Header>
       <Education></Education>
       <TechStack></TechStack>
-      <Projects></Projects>
+      
     </Fragment>
   );
 }
