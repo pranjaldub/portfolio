@@ -1,5 +1,7 @@
 import { Fragment } from "react";
 import classes from "../TechStack/TechStack.module.css";
+import Skills from "../../animations/Skills.json";
+import DisplayAnimation from "../../animations/DisplayAnimation";
 //import Display from "./Display";
 import ScrollAnimation from "react-animate-on-scroll";
 const TechStack = () => {
@@ -13,6 +15,12 @@ const TechStack = () => {
 
           <hr className={classes.underline}></hr>
         </header>
+        <div className={classes.avatar}>
+          <DisplayAnimation
+            animation={Skills}
+            animationName={"Skills"}
+          ></DisplayAnimation>
+        </div>
         <ScrollAnimation
           animateIn="bounceInRight"
           animateOut="None"
