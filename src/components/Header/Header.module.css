@@ -1,6 +1,7 @@
 .back{
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M355.4991247639001 101.54025764822057L352.31010986949946 192.86169588726767 490.8867746752705 151.98449910934508z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M980.4757189330717 437.5847227923664L1080.012347537489 414.6048813957276 1057.03250614085 315.0682527913104 957.4958775364329 338.04809418794923z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M292.487%2c820.09C351.759%2c817.89%2c400.389%2c776.932%2c428.29%2c724.591C454.463%2c675.492%2c453.75%2c617.323%2c426.404%2c568.868C398.561%2c519.53%2c349.139%2c484.152%2c292.487%2c483.953C235.518%2c483.753%2c186.75%2c519.38%2c156.928%2c567.92C125.414%2c619.215%2c109.52%2c682.338%2c138.025%2c735.364C167.827%2c790.802%2c229.589%2c822.424%2c292.487%2c820.09' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M786.6618288148985 453.46132902811155L907.5457906954929 434.315190381441 888.3996520488224 313.4312285008466 767.5156901682279 332.5773671475171z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M395.93343312221964 174.66730634232982L329.82653344540995 90.05433327076992 245.21356037385004 156.1612329475796 311.32046005065973 240.7742060191395z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1377.4198562863128 125.18803303784432L1283.4855981536043 40.609247117036375 1292.841070365505 219.12229117055278z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
-	height:100vh;
+	height:auto;
+	padding-bottom: 1em;
 }
 
 .navbar{
@@ -119,7 +120,7 @@ transform: scale(1,1) translate(0px, 0px);
  }
  
 
- .back{height:100vh;width:100%;display: inline-flex; }
+ .back{height:100vh;width:100%;display: inline-block; }
  svg text {
 	font-family:'Courier New', Courier, monospace;
 	letter-spacing: 1px;
@@ -131,7 +132,8 @@ transform: scale(1,1) translate(0px, 0px);
 	position: absolute;
 	animation: textAnimate 4s infinite alternate-reverse ;
 	margin-left: 10px;
-	padding: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
 	
 	
 	
@@ -140,7 +142,7 @@ transform: scale(1,1) translate(0px, 0px);
 	
 	
   }
-  svg{width: 100%;align-content: center;padding:20px}
+  svg{width: 100%;align-content: center;padding:0em ; }
   .intro{padding: 0.5px ; width:360px;align-content: center;height:100%}
 
   .sideText{font-size: 3em;color: white;padding-left: 1em;align-content: right;align-self: center;padding-top: 30px;position: absolute;}
@@ -151,7 +153,7 @@ transform: scale(1,1) translate(0px, 0px);
 	
 	margin-top:50px;
 	height:40px;
-	padding: 1em;
+	padding: 0.5em;
 	
 	  
 	
@@ -165,3 +167,7 @@ transform: scale(1,1) translate(0px, 0px);
   
  }
  
+
+.avatar{margin-left: 10em;}
+
+.media_avatar{margin-top: 4.5em;margin-right: 2em;height: 5em;left:2em;margin-right:100px;position: static;transform : translateX(-140px);}

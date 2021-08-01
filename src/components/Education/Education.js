@@ -11,7 +11,8 @@ const Education = () => {
         </header>
         <ScrollAnimation
           animateIn="slideInDown faster"
-          animateOut="fadeOutUp"
+          animateOut="None"
+          animateOnce="true"
           duration={0.5}
           delay={0}
         >

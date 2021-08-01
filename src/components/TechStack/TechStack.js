@@ -15,7 +15,8 @@ const TechStack = () => {
         </header>
         <ScrollAnimation
           animateIn="bounceInRight"
-          animateOut="fadeOut"
+          animateOut="None"
+          animateOnce="true"
           duration={0.5}
           delay={0}
         >
