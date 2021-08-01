@@ -13,10 +13,12 @@ const Projects = () => {
     return (
       <Fragment>
         <div className={classes.heading}>
-          <DisplayAnimation
-            animation={bounce}
-            animationName={"bounce"}
-          ></DisplayAnimation>
+          <span className={classes.animate}>
+            <DisplayAnimation
+              animation={bounce}
+              animationName={"bounce"}
+            ></DisplayAnimation>
+          </span>
           <div className={classes.project}>
             <h2>Projects</h2>
           </div>
@@ -29,28 +31,28 @@ const Projects = () => {
             ></ProjectCard>
 
             <ProjectCard
-              projectName={"HeadPose Estimation"}
-              tools={["PyTorch", "Python", "OpenCV"]}
+              projectName={"Text Moderation"}
+              tools={["Keras", "Python", "Spacy"]}
             ></ProjectCard>
 
             <ProjectCard
-              projectName={"HeadPose Estimation"}
-              tools={["PyTorch", "Python", "OpenCV"]}
+              projectName={"GPT3 Generation"}
+              tools={["Angular", "Ionic", "Flask"]}
             ></ProjectCard>
 
             <ProjectCard
-              projectName={"HeadPose Estimation"}
-              tools={["PyTorch", "Python", "OpenCV"]}
+              projectName={"Image Augmentation"}
+              tools={["PyTorch", "PIL", "Numpy"]}
             ></ProjectCard>
 
             <ProjectCard
-              projectName={"HeadPose Estimation"}
-              tools={["PyTorch", "Python", "OpenCV"]}
+              projectName={"React Order"}
+              tools={["ReactJS", "Javascript", "HTML5", "CSS3"]}
             ></ProjectCard>
 
             <ProjectCard
-              projectName={"HeadPose Estimation"}
-              tools={["PyTorch", "Python", "OpenCV"]}
+              projectName={"En-Gular-Ment"}
+              tools={["Angular", "Typescript", "ASP.NET", "C#"]}
             ></ProjectCard>
           </div>
         </div>
@@ -76,28 +78,28 @@ const Projects = () => {
             ></ProjectCard>
 
             <ProjectCard
-              projectName={"HeadPose Estimation"}
-              tools={["PyTorch", "Python", "OpenCV"]}
+              projectName={"Text Moderation"}
+              tools={["Keras", "Python", "Spacy"]}
             ></ProjectCard>
 
             <ProjectCard
-              projectName={"HeadPose Estimation"}
-              tools={["PyTorch", "Python", "OpenCV"]}
+              projectName={"GPT3 Generation"}
+              tools={["Angular", "Ionic", "Flask"]}
             ></ProjectCard>
 
             <ProjectCard
-              projectName={"HeadPose Estimation"}
-              tools={["PyTorch", "Python", "OpenCV"]}
+              projectName={"Image Augmentation"}
+              tools={["PyTorch", "PIL", "Numpy"]}
             ></ProjectCard>
 
             <ProjectCard
-              projectName={"HeadPose Estimation"}
-              tools={["PyTorch", "Python", "OpenCV"]}
+              projectName={"React Order"}
+              tools={["ReactJS", "Javascript", "HTML5", "CSS3"]}
             ></ProjectCard>
 
             <ProjectCard
-              projectName={"HeadPose Estimation"}
-              tools={["PyTorch", "Python", "OpenCV"]}
+              projectName={"En-Gular-Ment"}
+              tools={["Angular", "Typescript", "ASP.NET", "C#"]}
             ></ProjectCard>
           </div>
         </div>

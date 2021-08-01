@@ -10,7 +10,7 @@
 	position: relative;
 	width: 40vw;
 	height: 50vh;
-	background: #d0d8f3;
+	background: #02283b;
 	border-radius: 20px;
 	overflow: hidden;
 	display: inline-flex;
@@ -155,12 +155,12 @@
 .container .card .content-box a {
 	display: inline-block;
 	padding: 10px 20px;
-	background: #fff;
+	background: rgb(151, 150, 231);
 	border-radius: 4px;
 	margin-top: 10px;
 	text-decoration: none;
 	font-weight: 600;
-	color: #111;
+	color: rgb(255, 255, 255);
 	opacity: 0;
 	transform: translate(50px);
 	transition: 0.5s;
@@ -168,12 +168,15 @@
 .container .card:hover .content-box a{
 	opacity: 1;
 	transform: translateY(0px);
+	border-radius: 30px;
 	transition-delay: 0.75s;
+	
 }
 
 .container .card .content-box a:hover{
-	background: #9bdc28;
+	background: #ffffff;
 	transition: 0.1s;
+	color:black
 }
 .anchor{border-radius: 10px;}
 
@@ -232,7 +235,7 @@
 	}
 	.project h2{font-size: 4em;font-family: 'Courier New', Courier, monospace;display: inline-flex;}
 
-	
+	.animate{position:static;}
 
 	.media_heading{
 		background: linear-gradient(90deg, #032336,#1d1846);

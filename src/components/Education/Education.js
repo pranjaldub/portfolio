@@ -2,6 +2,8 @@ import { Fragment } from "react";
 import classes from "../Education/Education.module.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import Edu from "../../animations/Education.json";
+import DisplayAnimation from "../../animations/DisplayAnimation";
 const Education = () => {
   const { height, width } = useWindowDimensions();
   if (width > 1000) {
@@ -20,6 +22,12 @@ const Education = () => {
             delay={0}
           >
             <div className={classes.timeline}>
+              <div className={classes.animation}>
+                <DisplayAnimation
+                  animation={Edu}
+                  animationName={"Edu"}
+                ></DisplayAnimation>
+              </div>
               <ul>
                 <li>
                   <div className={classes.right_content}>
@@ -89,6 +97,12 @@ const Education = () => {
             delay={0}
           >
             <div className={classes.timeline}>
+              <div className={classes.media_animation}>
+                <DisplayAnimation
+                  animation={Edu}
+                  animationName={"Edu"}
+                ></DisplayAnimation>
+              </div>
               <ul>
                 <li>
                   <div className={classes.right_content}>
