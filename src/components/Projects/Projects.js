@@ -1,82 +1,108 @@
 import { Fragment } from "react";
-import classes from "../Projects/Projects.module.css";
+import React from "react";
+import ProjectCard from "./ProjectCard";
 import ScrollAnimation from "react-animate-on-scroll";
+import Lottie from "lottie-web";
+import bounce from "../../animations/bounce.json";
+import classes from "../Projects/Projects.module.css";
+import DisplayAnimation from "../../animations/DisplayAnimation";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 const Projects = () => {
-  return (
-    <Fragment>
-      <ScrollAnimation animateIn="fadeInUp" duration={0.5} delay={0}>
-        <div className={classes["card-three"]}>
-          <div className={classes["card-bg-three"]}></div>
-          <div className={classes["card-content-three"]}>
-            <div className={classes.title}>Title of card</div>
-            <div className={classes.description}>
-              Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do
-              eiusmod tempor
-            </div>
+  const { height, width } = useWindowDimensions();
+  if (width > 1000) {
+    return (
+      <Fragment>
+        <div className={classes.heading}>
+          <DisplayAnimation
+            animation={bounce}
+            animationName={"bounce"}
+          ></DisplayAnimation>
+          <div className={classes.project}>
+            <h2>Projects</h2>
           </div>
         </div>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeInUp" duration={0.5} delay={0}>
-        <div className={classes["card-three"]}>
-          <div className={classes["card-bg-three"]}></div>
-          <div className={classes["card-content-three"]}>
-            <div className={classes.title}>Title of card</div>
-            <div className={classes.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor
-            </div>
+        <div className={classes["gradient-background"]}>
+          <div>
+            <ProjectCard
+              projectName={"HeadPose Estimation"}
+              tools={["PyTorch", "Python", "OpenCV"]}
+            ></ProjectCard>
+
+            <ProjectCard
+              projectName={"HeadPose Estimation"}
+              tools={["PyTorch", "Python", "OpenCV"]}
+            ></ProjectCard>
+
+            <ProjectCard
+              projectName={"HeadPose Estimation"}
+              tools={["PyTorch", "Python", "OpenCV"]}
+            ></ProjectCard>
+
+            <ProjectCard
+              projectName={"HeadPose Estimation"}
+              tools={["PyTorch", "Python", "OpenCV"]}
+            ></ProjectCard>
+
+            <ProjectCard
+              projectName={"HeadPose Estimation"}
+              tools={["PyTorch", "Python", "OpenCV"]}
+            ></ProjectCard>
+
+            <ProjectCard
+              projectName={"HeadPose Estimation"}
+              tools={["PyTorch", "Python", "OpenCV"]}
+            ></ProjectCard>
           </div>
         </div>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeInUp" duration={0.5} delay={0}>
-        <div className={classes["card-three"]}>
-          <div className={classes["card-bg-three"]}></div>
-          <div className={classes["card-content-three"]}>
-            <div className={classes.title}>Title of card</div>
-            <div className={classes.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor
-            </div>
+      </Fragment>
+    );
+  } else {
+    return (
+      <Fragment>
+        <div className={classes.media_heading}>
+          <DisplayAnimation
+            animation={bounce}
+            animationName={"bounce"}
+          ></DisplayAnimation>
+          <div className={classes.media_project}>
+            <h2>Projects</h2>
           </div>
         </div>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeInUp" duration={0.5} delay={0}>
-        <div className={classes["card-three"]}>
-          <div className={classes["card-bg-three"]}></div>
-          <div className={classes["card-content-three"]}>
-            <div className={classes.title}>Title of card</div>
-            <div className={classes.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor
-            </div>
+        <div className={classes["gradient-background"]}>
+          <div>
+            <ProjectCard
+              projectName={"HeadPose Estimation"}
+              tools={["PyTorch", "Python", "OpenCV"]}
+            ></ProjectCard>
+
+            <ProjectCard
+              projectName={"HeadPose Estimation"}
+              tools={["PyTorch", "Python", "OpenCV"]}
+            ></ProjectCard>
+
+            <ProjectCard
+              projectName={"HeadPose Estimation"}
+              tools={["PyTorch", "Python", "OpenCV"]}
+            ></ProjectCard>
+
+            <ProjectCard
+              projectName={"HeadPose Estimation"}
+              tools={["PyTorch", "Python", "OpenCV"]}
+            ></ProjectCard>
+
+            <ProjectCard
+              projectName={"HeadPose Estimation"}
+              tools={["PyTorch", "Python", "OpenCV"]}
+            ></ProjectCard>
+
+            <ProjectCard
+              projectName={"HeadPose Estimation"}
+              tools={["PyTorch", "Python", "OpenCV"]}
+            ></ProjectCard>
           </div>
         </div>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeInUp" duration={0.5} delay={0}>
-        <div className={classes["card-three"]}>
-          <div className={classes["card-bg-three"]}></div>
-          <div className={classes["card-content-three"]}>
-            <div className={classes.title}>Title of card</div>
-            <div className={classes.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor
-            </div>
-          </div>
-        </div>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeInUp" duration={0.5} delay={0}>
-        <div className={classes["card-three"]}>
-          <div className={classes["card-bg-three"]}></div>
-          <div className={classes["card-content-three"]}>
-            <div className={classes.title}>Title of card</div>
-            <div className={classes.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor
-            </div>
-          </div>
-        </div>
-      </ScrollAnimation>
-    </Fragment>
-  );
+      </Fragment>
+    );
+  }
 };
 export default Projects;
