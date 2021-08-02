@@ -5,6 +5,7 @@
 	display: inline-flex;
 	height: auto;
 	
+	
 }
 .container .card{
 	position: relative;
@@ -14,6 +15,7 @@
 	border-radius: 20px;
 	overflow: hidden;
 	display: inline-flex;
+
 	
 
 
@@ -190,7 +192,8 @@
 	 background: linear-gradient(90deg, #6081ca,#22517c);
 	   animation: gradient 15s ease infinite; 
 		background-size: 400% 400%;
-		padding:40px
+		padding:40px;
+	
 	
   }
   @-webkit-keyframes gradient{

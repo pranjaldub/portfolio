@@ -3,6 +3,7 @@ import { Animated } from "react-animated-css";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import DisplayAnimation from "../../animations/DisplayAnimation";
 import Avatar from "../../animations/Avatar.json";
+
 //import "animate.css/animate.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import classes from "./Header.module.css";
@@ -142,6 +143,7 @@ const Header = () => {
                       </text>
                     </svg>
                   </div>
+
                   <h3 className={classes.sideTexth2}>
                     [And this is a demo project]
                   </h3>
