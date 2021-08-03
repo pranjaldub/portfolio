@@ -4,8 +4,11 @@
 .heading{color:white ; padding:40px;font: 6em sans-serif;display: inline-block;}
 .animation{zoom:120%;position: absolute;transform:translateY(-10em);margin-left: 37em;}
 .media_animation{position: absolute;transform:translateY(-9.5em);zoom:120%;right:-6em}
+.animation_2{position: absolute;transform:translateY(4.5em);zoom:120%;right:40em}
+.animation_3{position: absolute;bottom:6em;zoom:120%;right:4em;transform: rotate(10deg);}
 .underline{width: 30%;height:10px;border-top: 10px solid white;border-radius: 30px;}
-
+.media_animation_2{position: absolute;top:40em;zoom:80%;right:-11em;transform: rotate(15deg);}
+.media_animation_3{position: absolute;bottom:12em;zoom:120%;right:-11em;transform: rotate(10deg);}
 
 
 

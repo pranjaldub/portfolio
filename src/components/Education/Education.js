@@ -3,7 +3,9 @@ import classes from "../Education/Education.module.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import Edu from "../../animations/Education.json";
+import Graduation from "../../animations/Graduation.json";
 import DisplayAnimation from "../../animations/DisplayAnimation";
+import Science from "../../animations/Science.json";
 const Education = () => {
   const { height, width } = useWindowDimensions();
   if (width > 1000) {
@@ -43,7 +45,12 @@ const Education = () => {
                     <h3>February 2021 to Present </h3>
                   </div>
                 </li>
-
+                <div className={classes.animation_2}>
+                  <DisplayAnimation
+                    animation={Graduation}
+                    animationName={"Graduation"}
+                  ></DisplayAnimation>
+                </div>
                 <li>
                   <div className={classes.right_content}>
                     <h2>Galgotias University</h2>
@@ -60,7 +67,12 @@ const Education = () => {
                     <h3>August 2017 to August 2021</h3>
                   </div>
                 </li>
-
+                <div className={classes.animation_3}>
+                  <DisplayAnimation
+                    animation={Science}
+                    animationName={"Science"}
+                  ></DisplayAnimation>
+                </div>
                 <li>
                   <div className={classes.right_content}>
                     <h2>Science Student</h2>
@@ -118,7 +130,12 @@ const Education = () => {
                     <h3>February 2021 to Present </h3>
                   </div>
                 </li>
-
+                <div className={classes.media_animation_2}>
+                  <DisplayAnimation
+                    animation={Graduation}
+                    animationName={"Graduation"}
+                  ></DisplayAnimation>
+                </div>
                 <li>
                   <div className={classes.right_content}>
                     <h2>Galgotias University</h2>
@@ -135,7 +152,12 @@ const Education = () => {
                     <h3>August 2017 to August 2021</h3>
                   </div>
                 </li>
-
+                <div className={classes.media_animation_3}>
+                  <DisplayAnimation
+                    animation={Science}
+                    animationName={"Science"}
+                  ></DisplayAnimation>
+                </div>
                 <li>
                   <div className={classes.right_content}>
                     <h2>Science Student</h2>
