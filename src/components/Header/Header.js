@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { Animated } from "react-animated-css";
+import { useRef } from "react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import DisplayAnimation from "../../animations/DisplayAnimation";
 import Avatar from "../../animations/Avatar.json";
@@ -8,7 +9,7 @@ import HeaderBackground from "../../animations/HeaderBackground.json";
 //import "animate.css/animate.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import classes from "./Header.module.css";
-const Header = () => {
+const Header = (props) => {
   const otherClasses = classes.headerElements;
   const { height, width } = useWindowDimensions();
   const func = () => {
@@ -89,7 +90,9 @@ const Header = () => {
                     [And this is a demo project]
                   </h3>
                 </div>
-                <div className={classes.bounce}>Explore More</div>
+                <div className={classes.bounce} onClick={props.scroll}>
+                  Take me to skills!
+                </div>
               </Animated>
             </div>
           </Animated>
@@ -176,7 +179,9 @@ const Header = () => {
                     [And this is a demo project]
                   </h3>
                 </div>
-                <div className={classes.bounce}>Explore More</div>
+                <div className={classes.bounce} onClick={props.scroll}>
+                  I dont care , just show me skills !
+                </div>
               </Animated>
             </div>
           </Animated>
