@@ -9,8 +9,11 @@ import HeaderBackground from "../../animations/HeaderBackground.json";
 import "bootstrap/dist/css/bootstrap.min.css";
 import classes from "./Header.module.css";
 const Header = () => {
-  const otherClasses = `${classes.headerElements} `;
+  const otherClasses = classes.headerElements;
   const { height, width } = useWindowDimensions();
+  const func = () => {
+    console.log(1);
+  };
   if (width < 1000) {
     return (
       <Fragment>
@@ -33,7 +36,6 @@ const Header = () => {
                 isVisible={true}
               >
                 <div className={classes.navbar}>
-                  <span className={classes.headerElements}>Me</span>
                   <span className={otherClasses}>Education</span>
                   <span className={otherClasses}>Tech Stack</span>
                   <span className={otherClasses}>Projects</span>
@@ -114,23 +116,24 @@ const Header = () => {
                 animationIn="slideInLeft"
                 animationOut="fadeOut"
                 isVisible={true}
-              >
-                <div className={classes.navbar}>
-                  <span className={classes.headerElements}>Me</span>
-                  <span className={otherClasses}>Education</span>
-                  <span className={otherClasses}>Tech Stack</span>
-                  <span className={otherClasses}>Projects</span>
-                  <span className={otherClasses}>Connect</span>
-                  <span className={otherClasses}>About</span>
-                </div>
-              </Animated>
-              <Animated
-                animationIn="slideInLeft"
-                animationOut="fadeOut"
-                isVisible={true}
                 animationInDuration={1400}
               >
                 <div className={classes.intro}>
+                  <Animated
+                    animationIn="slideInLeft"
+                    animationOut="fadeOut"
+                    isVisible={true}
+                  >
+                    <div className={classes.navbar}>
+                      <span onClick={func} className={classes.headerElements}>
+                        Education
+                      </span>
+                      <span className={classes.headerElements}>Tech Stack</span>
+                      <span className={classes.headerElements}>Projects</span>
+                      <span className={classes.headerElements}>Connect</span>
+                      <span className={classes.headerElements}>About</span>
+                    </div>
+                  </Animated>
                   <div className={classes.ConfigureAvatar}>
                     <h1 className={classes.sideText}>Hey, I'm</h1>
                     <div className={classes.avatarBack}>
