@@ -31,18 +31,8 @@ const Projects = () => {
             ></ProjectCard>
 
             <ProjectCard
-              projectName={"Text Moderation"}
-              tools={["Keras", "Python", "Spacy"]}
-            ></ProjectCard>
-
-            <ProjectCard
               projectName={"GPT3 Generation"}
               tools={["Angular", "Ionic", "Flask"]}
-            ></ProjectCard>
-
-            <ProjectCard
-              projectName={"Image Augmentation"}
-              tools={["PyTorch", "PIL", "Numpy"]}
             ></ProjectCard>
 
             <ProjectCard
@@ -51,7 +41,7 @@ const Projects = () => {
             ></ProjectCard>
 
             <ProjectCard
-              projectName={"En-Gular-Ment"}
+              projectName={"Hospital Management"}
               tools={["Angular", "Typescript", "ASP.NET", "C#"]}
             ></ProjectCard>
           </div>
@@ -78,18 +68,8 @@ const Projects = () => {
             ></ProjectCard>
 
             <ProjectCard
-              projectName={"Text Moderation"}
-              tools={["Keras", "Python", "Spacy"]}
-            ></ProjectCard>
-
-            <ProjectCard
               projectName={"GPT3 Generation"}
               tools={["Angular", "Ionic", "Flask"]}
-            ></ProjectCard>
-
-            <ProjectCard
-              projectName={"Image Augmentation"}
-              tools={["PyTorch", "PIL", "Numpy"]}
             ></ProjectCard>
 
             <ProjectCard
@@ -98,7 +78,7 @@ const Projects = () => {
             ></ProjectCard>
 
             <ProjectCard
-              projectName={"En-Gular-Ment"}
+              projectName={"Hospital Management"}
               tools={["Angular", "Typescript", "ASP.NET", "C#"]}
             ></ProjectCard>
           </div>

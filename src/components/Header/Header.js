@@ -3,7 +3,8 @@ import { Animated } from "react-animated-css";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import DisplayAnimation from "../../animations/DisplayAnimation";
 import Avatar from "../../animations/Avatar.json";
-
+import AvatarBackground from "../../animations/AvatarBackground.json";
+import HeaderBackground from "../../animations/HeaderBackground.json";
 //import "animate.css/animate.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import classes from "./Header.module.css";
@@ -14,6 +15,12 @@ const Header = () => {
     return (
       <Fragment>
         <div>
+          <div className={classes.media_HeaderBackground}>
+            <DisplayAnimation
+              animation={HeaderBackground}
+              animationName={"HeaderBackground"}
+            ></DisplayAnimation>
+          </div>
           <Animated
             animationIn="fadeInDown"
             animationOut="fadeOut"
@@ -42,6 +49,12 @@ const Header = () => {
               >
                 <div className={classes.intro}>
                   <h1 className={classes.sideText}>Hey, I'm</h1>
+                  <div className={classes.media_avatarBack}>
+                    <DisplayAnimation
+                      animation={AvatarBackground}
+                      animationName={"AvatarBackground"}
+                    ></DisplayAnimation>
+                  </div>
                   <div className={classes.media_avatar}>
                     <DisplayAnimation
                       animation={Avatar}
@@ -85,6 +98,12 @@ const Header = () => {
     return (
       <Fragment>
         <div>
+          <div className={classes.HeaderBackground}>
+            <DisplayAnimation
+              animation={HeaderBackground}
+              animationName={"HeaderBackground"}
+            ></DisplayAnimation>
+          </div>
           <Animated
             animationIn="fadeInDown"
             animationOut="fadeOut"
@@ -114,6 +133,12 @@ const Header = () => {
                 <div className={classes.intro}>
                   <div className={classes.ConfigureAvatar}>
                     <h1 className={classes.sideText}>Hey, I'm</h1>
+                    <div className={classes.avatarBack}>
+                      <DisplayAnimation
+                        animation={AvatarBackground}
+                        animationName={"AvatarBackground"}
+                      ></DisplayAnimation>
+                    </div>
                     <div className={classes.avatar}>
                       <DisplayAnimation
                         animation={Avatar}
