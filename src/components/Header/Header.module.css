@@ -128,7 +128,7 @@ transform: scale(1,1) translate(0px, 0px);
 
 .bounce:hover{
 	background-color: rgb(255, 255, 255);
-	border:2px solid black;
+
 	transition: 0.2s ease-in ;
 }
 @media (max-width: 1000px) {
@@ -191,7 +191,7 @@ transform: scale(1,1) translate(0px, 0px);
   }
   .bounce:hover{
 	background-color: rgb(255, 255, 255);
-	border:2px solid black;
+	
 	transition: 0.2s ease-in ;
 	color:black
 }

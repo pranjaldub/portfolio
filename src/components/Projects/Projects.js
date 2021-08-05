@@ -23,28 +23,30 @@ const Projects = () => {
             <h2>Projects</h2>
           </div>
         </div>
-        <div className={classes["gradient-background"]}>
-          <div>
-            <ProjectCard
-              projectName={"HeadPose Estimation"}
-              tools={["PyTorch", "Python", "OpenCV"]}
-            ></ProjectCard>
 
-            <ProjectCard
-              projectName={"GPT3 Generation"}
-              tools={["Angular", "Ionic", "Flask"]}
-            ></ProjectCard>
+        <div className={classes.container}>
+          <ProjectCard
+            projectName={"HeadPose Estimation"}
+            tools={["PyTorch", "Python", "OpenCV"]}
+            description={
+              "jshadjhas dasjhdajhsdl asdhalsjdlakjsd asldkjaksjdlaksd asldkjaksjdlaksd asldkjaskdjaksd asdlkjaksjd."
+            }
+          ></ProjectCard>
 
-            <ProjectCard
-              projectName={"React Order"}
-              tools={["ReactJS", "Javascript", "HTML5", "CSS3"]}
-            ></ProjectCard>
+          <ProjectCard
+            projectName={"GPT3 Generation"}
+            tools={["Angular", "Ionic", "Flask"]}
+          ></ProjectCard>
 
-            <ProjectCard
-              projectName={"Hospital Management"}
-              tools={["Angular", "Typescript", "ASP.NET", "C#"]}
-            ></ProjectCard>
-          </div>
+          <ProjectCard
+            projectName={"React Order"}
+            tools={["ReactJS", "Javascript", "HTML5", "CSS3"]}
+          ></ProjectCard>
+
+          <ProjectCard
+            projectName={"Hospital Management"}
+            tools={["Angular", "Typescript", "ASP.NET", "C#"]}
+          ></ProjectCard>
         </div>
       </Fragment>
     );

@@ -1,9 +1,14 @@
 
+
+
+
 .container{
 	position: relative;
 	padding:3em;
-	display: inline-flex;
+	display: flex;
 	height: auto;
+	flex-direction: column;
+
 	
 	
 }
@@ -14,7 +19,8 @@
 	background: #022435;
 	border-radius: 20px;
 	overflow: hidden;
-	display: inline-flex;
+	margin-top: 20px;
+	
 
 	
 
@@ -31,6 +37,7 @@
 	background: #7984e4;
 	clip-path: circle(240px at 30% 100%);
 	transition: 0.5s ease-in-out;
+	
 	
 }
 .container .card:hover:before{
@@ -82,6 +89,10 @@
 	padding:8px;
 	
 }
+
+
+
+
 .container .card .content-box h2{
 	position: relative;
 	font-weight: 600;
@@ -182,42 +193,17 @@
 }
 .anchor{border-radius: 10px;}
 
+.hidden{position: absolute;height:40vh;width: 6vw;background-color: rgb(95, 164, 241);border-radius:0px 60px 60px 0px;left:40em;content: none;overflow: hidden;align-content: center;align-items: center;transform:translateY(4em)}
+.onexpand{display: none;position: relative;overflow:hidden;background-color: none;align-self: center;top:10em;padding:5px 5px 5px 2em}
+.hidden:hover{height:40vh;width: 40vw ; transition: 1s ease;border-radius:0px 5px 5px 0px;position: absolute;transition: 0.5s ease-in-out;}
+.hidden:hover  .onexpand{display: inline;transition-delay: 2s;position: relative;overflow: hidden;flex-direction: row;transition: 0.1s ease-in;}
 
 
 
-.gradient-background {
-	display: inline-flex;
-	height: auto;
-	width:100%;
-	 background: linear-gradient(90deg, #6081ca,#22517c);
-	   animation: gradient 15s ease infinite; 
-		background-size: 400% 400%;
-		padding:40px;
+
+
 	
 	
-  }
-  @-webkit-keyframes gradient{
-	0% {
-	  background-position: 0 50%;
-	}
-	50% {
-	  background-position: 100% 50%;
-	}
-	100% {
-	   background-position: 0% 50%;
-	}
-  }
-  @keyframes gradient{
-	0% {
-	  background-position: 0 50%;
-	}
-	50% {
-	  background-position: 100% 50%;
-	}
-	100% {
-	   background-position: 0% 50%;
-	}
-  }
 
   .card:hover{  background: #eee;
 	box-shadow: 0 8px 8px -4px lightblue;}
@@ -443,38 +429,6 @@
 
 
 
-.gradient-background {
-	display: inline-flex;
-	height: auto;
-	width:100%;
-	 background: linear-gradient(90deg, #6081ca,#22517c);
-	   animation: gradient 15s ease infinite; 
-		background-size: 400% 400%;
-		padding:40px
-	
-  }
-  @-webkit-keyframes gradient{
-	0% {
-	  background-position: 0 50%;
-	}
-	50% {
-	  background-position: 100% 50%;
-	}
-	100% {
-	   background-position: 0% 50%;
-	}
-  }
-  @keyframes gradient{
-	0% {
-	  background-position: 0 50%;
-	}
-	50% {
-	  background-position: 100% 50%;
-	}
-	100% {
-	   background-position: 0% 50%;
-	}
-  }
 
   .card:hover{  background: #eee;
 	box-shadow: 0 8px 8px -4px lightblue;}
