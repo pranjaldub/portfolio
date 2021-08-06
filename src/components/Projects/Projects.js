@@ -3,6 +3,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import ScrollAnimation from "react-animate-on-scroll";
 import Lottie from "lottie-web";
+import Plus from "../../animations/Plus.json";
 import bounce from "../../animations/bounce.json";
 import classes from "../Projects/Projects.module.css";
 import DisplayAnimation from "../../animations/DisplayAnimation";
@@ -28,9 +29,7 @@ const Projects = () => {
           <ProjectCard
             projectName={"HeadPose Estimation"}
             tools={["PyTorch", "Python", "OpenCV"]}
-            description={
-              "jshadjhas dasjhdajhsdl asdhalsjdlakjsd asldkjaksjdlaksd asldkjaksjdlaksd asldkjaskdjaksd asdlkjaksjd."
-            }
+            description={""}
           ></ProjectCard>
 
           <ProjectCard

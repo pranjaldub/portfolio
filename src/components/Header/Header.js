@@ -123,7 +123,7 @@ const Header = (props) => {
               >
                 <div className={classes.intro}>
                   <Animated
-                    animationIn="slideInLeft"
+                    animationIn="fadeIn"
                     animationOut="fadeOut"
                     isVisible={true}
                   >
