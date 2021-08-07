@@ -10,82 +10,102 @@ const TechStack = () => {
   return (
     <Fragment>
       <div className={classes.body}>
-        <header className={classes.heading}>
-          <h2>My Tech Stack</h2>
+        <div className={classes.bg_repeat}>
+          <div className={classes.bg_repeat_items}>
+            <div
+              className={`${classes.bg_repeat_item} ${classes.bg_repeat_item_1}`}
+            ></div>
+            <div
+              className={`${classes.bg_repeat_item} ${classes.bg_repeat_item_2}`}
+            ></div>
+            <div
+              className={`${classes.bg_repeat_item} ${classes.bg_repeat_item_3}`}
+            ></div>
+            <div
+              className={`${classes.bg_repeat_item} ${classes.bg_repeat_item_4}`}
+            ></div>
+            <div
+              className={`${classes.bg_repeat_item} ${classes.bg_repeat_item_5}`}
+            ></div>
 
-          <hr className={classes.underline}></hr>
-        </header>
-        <div className={classes.avatar}>
-          <DisplayAnimation
-            animation={Skills}
-            animationName={"Skills"}
-          ></DisplayAnimation>
-        </div>
-        <ScrollAnimation
-          animateIn="bounceInRight"
-          animateOut="None"
-          animateOnce="true"
-          duration={0.5}
-          delay={0}
-        >
-          <div className={classes.container}>
-            <div className={classes.card}>
-              <h3 className={classes.title}>Languages</h3>
-              <div className={classes.content}>
-                <ul>
-                  <li>Python</li>
-                  <li>Typescript</li>
-                  <li>Javascript</li>
-                  <li>C Sharp</li>
-                </ul>
-              </div>
-            </div>
+            <header className={classes.heading}>
+              <h2>My Tech Stack</h2>
 
-            <div className={classes.card}>
-              <h3 className={classes.title}>Frontend</h3>
-              <div className={classes.content}>
-                <ul>
-                  <li>Angular 2+</li>
-                  <li>React Js</li>
-                  <li>Animate.css</li>
-                  <li>CSS3</li>
-                  <li>HTML5</li>
-                  <li>Bootstrap4</li>
-                  <li>Angular Material</li>
-                </ul>
-              </div>
+              <hr className={classes.underline}></hr>
+            </header>
+            <div className={classes.avatar}>
+              <DisplayAnimation
+                animation={Skills}
+                animationName={"Skills"}
+              ></DisplayAnimation>
             </div>
-            <div className={classes.card}>
-              <h3 className={classes.title}>Backend</h3>
-              <div className={classes.content}>
-                <ul>
-                  <li>SQL Server</li>
-                  <li>Entity Framework Core</li>
-                  <li>ASP.NET Core</li>
-                  <li>Flask</li>
-                  <li>FastAPI</li>
-                </ul>
+            <ScrollAnimation
+              animateIn="bounceInRight"
+              animateOut="None"
+              animateOnce="true"
+              duration={0.5}
+              delay={0}
+            >
+              <div className={classes.container}>
+                <div className={classes.card}>
+                  <h3 className={classes.title}>Languages</h3>
+                  <div className={classes.content}>
+                    <ul>
+                      <li>Python</li>
+                      <li>Typescript</li>
+                      <li>Javascript</li>
+                      <li>C Sharp</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className={classes.card}>
+                  <h3 className={classes.title}>Frontend</h3>
+                  <div className={classes.content}>
+                    <ul>
+                      <li>Angular 2+</li>
+                      <li>React Js</li>
+                      <li>Animate.css</li>
+                      <li>CSS3</li>
+                      <li>HTML5</li>
+                      <li>Bootstrap4</li>
+                      <li>Angular Material</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className={classes.card}>
+                  <h3 className={classes.title}>Backend</h3>
+                  <div className={classes.content}>
+                    <ul>
+                      <li>SQL Server</li>
+                      <li>Entity Framework Core</li>
+                      <li>ASP.NET Core</li>
+                      <li>Flask</li>
+                      <li>FastAPI</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className={classes.card}>
+                  <h3 className={classes.title}>Machine Learning</h3>
+                  <div className={classes.content}>
+                    <ul>
+                      <li>Numpy</li>
+                      <li>Pandas</li>
+                      <li>Scikit Learn</li>
+                      <li>Matplotlib/seaborn</li>
+                      <li>Keras</li>
+                      <li>Pytorch</li>
+                      <li>Spacy</li>
+                      <li>NLTK</li>
+                      <li>OpenCV</li>
+                      <li>H20 ML</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className={classes.card}>
-              <h3 className={classes.title}>Machine Learning</h3>
-              <div className={classes.content}>
-                <ul>
-                  <li>Numpy</li>
-                  <li>Pandas</li>
-                  <li>Scikit Learn</li>
-                  <li>Matplotlib/seaborn</li>
-                  <li>Keras</li>
-                  <li>Pytorch</li>
-                  <li>Spacy</li>
-                  <li>NLTK</li>
-                  <li>OpenCV</li>
-                  <li>H20 ML</li>
-                </ul>
-              </div>
-            </div>
+            </ScrollAnimation>
           </div>
-        </ScrollAnimation>
+        </div>
       </div>
     </Fragment>
   );

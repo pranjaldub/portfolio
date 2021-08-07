@@ -197,7 +197,7 @@
 
 .description{padding:1em ; font-family:cursive;font-size: 1rem;}
 	
-.desc_container{width:40vw ; height: 20vh;display: inline-flex;background-color: rgb(255, 255, 255);padding:2em;position: relative;margin:2em;white-space: pre-line;}
+.desc_container{width:40vw ; height: 20vh;display: inline-flex;background-color: none;padding:2em;position: relative;margin:2em;white-space: pre-line;}
 
   .card:hover{  background: #eee;
 	box-shadow: 0 8px 8px -4px lightblue;}
@@ -544,6 +544,7 @@
 }
 .green {
     color: #7898ee;
+	background: none;
 }
 div._heading > div {
     animation-delay: 0;
@@ -568,3 +569,9 @@ div._heading > div:nth-child(3) > p {
         transform: translateY(0);
     }
 }
+
+
+.bubble{position: absolute;right:10em}
+.gpt{position: absolute;right:42em;top:32em;transform: rotate(20deg);}
+.react{position: absolute;bottom:45em;zoom:80%;left:30em}
+.hospital{position: absolute;bottom:-1em;zoom:100%;left:30em}
