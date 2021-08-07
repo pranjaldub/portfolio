@@ -25,7 +25,27 @@ const Projects = () => {
             ></DisplayAnimation>
           </span>
           <div className={classes.project}>
-            <h2>Projects</h2>
+            {/* <h2>Projects</h2> */}
+            <div className={classes.content}>
+              <div className={classes.content__container}>
+                <p className={classes.content__container__text}>My</p>
+
+                <ul className={classes.content__container__list}>
+                  <li className={classes.content__container__list__item}>
+                    Projects
+                  </li>
+                  <li className={classes.content__container__list__item}>
+                    Work
+                  </li>
+                  <li className={classes.content__container__list__item}>
+                    daily grind :)
+                  </li>
+                  <li className={classes.content__container__list__item}>
+                    developments
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -73,6 +93,64 @@ const Projects = () => {
             ></DisplayAnimation>
           </div>
         </div>
+        <ScrollAnimation
+          animateIn="bounceInRight"
+          animateOut="flipOutX"
+          animateOnce="false"
+          duration={0.5}
+          delay={0}
+        >
+          <div className={classes.__heading}>
+            <div className={classes.view_more}>
+              <div className={classes.more_text}>
+                <p>
+                  <span className={classes._blue}>There's more ! </span>
+                  <p>this was just an intro</p>
+                </p>
+              </div>
+              <div className={classes.view_more_button}>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                  <defs>
+                    <filter id="gooey">
+                      <feGaussianBlur
+                        in="SourceGraphic"
+                        stdDeviation="5"
+                        result="blur"
+                      />
+                      <feColorMatrix
+                        in="blur"
+                        type="matrix"
+                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                        result="highContrastGraphic"
+                      />
+                      <feComposite
+                        in="SourceGraphic"
+                        in2="highContrastGraphic"
+                        operator="atop"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+
+                <button id={classes["gooey-button"]}>
+                  <span className={classes.button_label}>View More</span>
+                  <span className={classes.bubbles}>
+                    <span className={classes.bubble}></span>
+                    <span className={classes.bubble}></span>
+                    <span className={classes.bubble}></span>
+                    <span className={classes.bubble}></span>
+                    <span className={classes.bubble}></span>
+                    <span className={classes.bubble}></span>
+                    <span className={classes.bubble}></span>
+                    <span className={classes.bubble}></span>
+                    <span className={classes.bubble}></span>
+                    <span className={classes.bubble}></span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </ScrollAnimation>
       </Fragment>
     );
   } else {
