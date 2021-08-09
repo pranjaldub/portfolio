@@ -1,8 +1,8 @@
-.about{margin-top:10em}
+.about{margin-top:10em ; padding:1em}
 @media only screen and (min-width:1001px){.about{ margin-top: 30em}}
 body {
     margin: 0;
-    padding:15px;
+   
     background-color: #FEFFFF;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     
