@@ -197,7 +197,7 @@
 
 .description{padding:1em ; font-family:cursive;font-size: 1rem;}
 	
-.desc_container{width:40vw ; height: 20vh;display: inline-flex;background-color: none;padding:2em;position: relative;margin:2em;white-space: pre-line;}
+.desc_container{width:40vw ; height: 20vh;display: inline-flex;background-color: none;padding:0em;position: relative;margin:2em;white-space: pre-line;}
 
   .card:hover{  background: #eee;
 	box-shadow: 0 8px 8px -4px lightblue;}
@@ -223,7 +223,7 @@
 	.animate{position:static;}
 
 	.media_heading{
-		background: linear-gradient(90deg, #032336,#1d1846);
+		background: white;
 		display: flex;
 	height: 8em;
 	width:100%;
@@ -530,13 +530,30 @@
 ._heading {
     margin: 10px 0 0 10px;
     font-size: 4em;
-    width: max-content;
+    width: 100vw;
+	white-space:pre-wrap;
     display: flex;
     flex-direction: column;
 	position: absolute;
 }
+
+@media(max-width:1000px){
+	._heading {
+		margin: 0px 0 0 0px;
+		font-size: 2em;
+		width: max-content;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		bottom:1em;
+		left: -0.1em;
+		
+	}
+}
+	
 ._heading > div {
     overflow: hidden;
+	zoom:80%
 }
 ._heading > div > p {
 
@@ -574,10 +591,16 @@ div._heading > div:nth-child(3) > p {
 
 
 .bubble{position: absolute;right:10em}
+.media_bubble{position: absolute;right:-10em;transform:translateY(10em);zoom:150%}
 .gpt{position: absolute;right:42em;top:32em;transform: rotate(20deg);}
+.media_gpt{position: absolute;right:-12em;transform:translateY(6em) rotate(180deg);zoom:150%;animation:gpt 6s  ease-in-out  infinite both alternate-reverse}
+@keyframes gpt{0%{}
+50%{transform:translateY(10em)}
+100%{transform:translateY(-5em)}}
 .react{position: absolute;bottom:45em;zoom:80%;left:30em}
+.media_react{position: absolute;right:-10em;transform:translateY(-25em);zoom:120%}
 .hospital{position: absolute;bottom:-2em;zoom:100%;left:31em}
-
+.media_hospi{position: absolute;right:-10em;transform:translateY(-25em);zoom:120%}
 
 
 .__heading {
@@ -589,6 +612,7 @@ div._heading > div:nth-child(3) > p {
     flex-direction: column;
 	position: relative;
 }
+
 .__heading > div {
     overflow: hidden;
 	
@@ -611,7 +635,51 @@ div._heading > div:nth-child(3) > p {
 
 .view_more{left:10em;position: absolute;display: inline-block;height:auto;width: 100vw;zoom:80%;margin:1em;}
 
+@media(max-width:1000px){.__heading {
 
+    margin: 0px 0 0 0px;
+    font-size: 2em;
+    width: max-content;
+    display: inline-flex;
+    flex-direction: column;
+	position: relative;
+	left:-8em;
+	margin-left:1em;
+	top:-2em
+
+}
+
+
+.__heading > div {
+    overflow: hidden;
+	
+}
+.__heading > div > p {
+
+    white-space: nowrap;
+    margin: 0;
+    line-height: 117%;
+	font-family:cursive;
+}
+._blue {
+    color: #7898ee;
+	background: none;
+	font-family:cursive;
+	zoom:100%;
+	
+}
+.more_text{font-family: cursive;}
+
+.view_more{position: absolute;display: inline-block;height:auto;width: 100vw;zoom:80%;margin:1em;}
+
+@media(max-width:1000px){
+	.view_more{position: absolute;display: inline-block;height:auto;width: 100vw;zoom:90%;margin-left:-1em;}
+}
+
+
+
+
+}
 
 
 
@@ -628,6 +696,23 @@ div._heading > div:nth-child(3) > p {
 	margin:1em;
 	border-radius: 30px;
 	left:-10em
+}
+
+@media(max-width:1000px){
+	#gooey-button {
+		
+		font-size: 1rem;
+		border: none;
+		color: #0c1016;
+		filter: url("#gooey");
+		position: relative;
+		background-color: #7898ee;
+		
+		border-radius: 30px;
+		left:5em;
+		bottom:10em
+	}
+	
 }
 #gooey-button:hover{background-color:rgb(24, 207, 207) ;transition: 0.2s ease-in;}
 #gooey-button:focus {
@@ -858,11 +943,37 @@ div._heading > div:nth-child(3) > p {
 	color: #010303;
 	zoom:150%
 }
+
+@media(max-width:1000px){
+
+	.content {
+		position: relative;
+		
+		left: 50%;
+		transform: translate(-50%, -50%);
+		
+		overflow: hidden;
+		font-family: 'Lato', sans-serif;
+		font-size: 35px;
+		line-height: 40px;
+		color: #010303;
+		zoom:80%
+	}
+
+}
 .content__container {
 	font-weight: 600;
 	overflow: hidden;
 	height: 40px;
 	padding: 0 20px;
+}
+@media(max-width:1000px){
+	.content__container {
+		font-weight: 600;
+		overflow: hidden;
+		height: 40px;
+		padding: 0 20px;
+	}
 }
 .content__container:before {
 	content: '[';
@@ -902,6 +1013,31 @@ div._heading > div:nth-child(3) > p {
 	animation-name: change;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
+}
+@media(max-width:1000px){
+	.content__container__list {
+		margin-top: 0;
+		padding-left: 2em;
+		text-align: left;
+		list-style: none;
+		animation-name: change;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+		animation-name: change;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+	}
+
+	.content__container:before {
+		display:none;
+	}
+	.content__container:after {
+		display:none
+	}
+
+
+
+
 }
 .content__container__list__item {
 	line-height: 40px;

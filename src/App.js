@@ -7,6 +7,7 @@ import Education from "./components/Education/Education";
 import TechStack from "./components/TechStack/TechStack";
 import Projects from "./components/Projects/Projects";
 import Social from "./Social";
+import About from "./components/About/About";
 import classes from "./Social.module.css";
 function RenderMain(props) {
   const scroll = () => {
@@ -27,6 +28,9 @@ function RenderMain(props) {
       <section id={"projects"}>
         <Projects></Projects>
       </section>
+      {/* <section id={"about"}>
+        <About></About>
+      </section> */}
     </Fragment>
   );
 }
