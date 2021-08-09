@@ -13,7 +13,7 @@ const Education = () => {
       <Fragment>
         <div className={classes.body}>
           <header className={classes.heading}>
-            <h2>Education Details</h2>
+            <h2 style={{ color: "white" }}>Education Details</h2>
             <hr className={classes.underline}></hr>
           </header>
           <ScrollAnimation
@@ -98,7 +98,7 @@ const Education = () => {
       <Fragment>
         <div className={classes.body}>
           <header className={classes.heading}>
-            <h2>Education Details</h2>
+            <h2 style={{ color: "white" }}>Education Details</h2>
             <hr className={classes.underline}></hr>
           </header>
           <ScrollAnimation
