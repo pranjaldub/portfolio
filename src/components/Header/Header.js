@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Animated } from "react-animated-css";
-import { useRef } from "react";
+
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import DisplayAnimation from "../../animations/DisplayAnimation";
 import Avatar from "../../animations/Avatar.json";
@@ -12,6 +12,10 @@ import classes from "./Header.module.css";
 const Header = (props) => {
   const otherClasses = classes.headerElements;
   const { height, width } = useWindowDimensions();
+
+  const options = ["one", "two", "three"];
+  const defaultOption = options[0];
+
   const func = () => {
     console.log(1);
   };

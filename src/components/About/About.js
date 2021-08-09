@@ -1,6 +1,17 @@
 import { Fragment } from "react";
+import { saveAs } from "file-saver";
+import FileSaver from "file-saver";
 import classes from "./About.module.css";
 const About = () => {
+  //for downloading resume
+  const saveFile = () => {
+    FileSaver.saveAs(
+      process.env.REACT_APP_CLIENT_URL + "../../public/resume.pdf",
+      "resume.pdf"
+    );
+  };
+  const url =
+    "https://drive.google.com/file/d/17-BOC8jsA05968Qrr5KJudL-Nr1Qq8re/view?usp=sharing";
   return (
     <div className={classes.about}>
       <header className={classes.masthead}>
@@ -108,6 +119,29 @@ const About = () => {
             You came this far , dont leave without connecting !
           </span>
         </p>
+        {/* <button
+          className="cv"
+          onClick={() => {
+            window.location.href =
+              "https://drive.google.com/open?id=17-BOC8jsA05968Qrr5KJudL-Nr1Qq8re";
+          }}
+        >
+          Redirect to Resume
+        </button> */}
+
+        <div className={classes._container}>
+          <button
+            className={classes.about_button}
+            data-content="View Resume"
+            onClick={() => {
+              window.location.href =
+                "https://drive.google.com/open?id=17-BOC8jsA05968Qrr5KJudL-Nr1Qq8re";
+            }}
+          >
+            Download Resume
+          </button>
+        </div>
+
         <ul className={classes["social"]}>
           <li>
             <a href="https://github.com/pranjaldub">Github</a>
