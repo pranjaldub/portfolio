@@ -28,9 +28,9 @@ function RenderMain(props) {
       <section id={"projects"}>
         <Projects></Projects>
       </section>
-      {/* <section id={"about"}>
+      <section id={"about"}>
         <About></About>
-      </section> */}
+      </section>
     </Fragment>
   );
 }
