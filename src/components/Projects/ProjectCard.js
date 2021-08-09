@@ -83,7 +83,7 @@ const ProjectCard = (props) => {
             <span></span>
           </div> */}
               <div className={classes.media_anchor}>
-                <a href="#">View Project</a>
+                <a href={props.github}>View Project</a>
               </div>
             </div>
           </div>
