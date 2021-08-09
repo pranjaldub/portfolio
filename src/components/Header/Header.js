@@ -86,9 +86,7 @@ const Header = (props) => {
                       Pranjal Dubey
                     </text>
                   </svg>
-                  <h3 className={classes.sideTexth2}>
-                    [And this is a demo project]
-                  </h3>
+                  <h3 className={classes.sideTexth2}>[Still not complete !]</h3>
                 </div>
                 <div className={classes.bounce} onClick={props.scroll}>
                   Take me to skills!
@@ -175,9 +173,7 @@ const Header = (props) => {
                     </svg>
                   </div>
 
-                  <h3 className={classes.sideTexth2}>
-                    [And this is a demo project]
-                  </h3>
+                  <h3 className={classes.sideTexth2}>[Still not complete !]</h3>
                 </div>
                 <div className={classes.bounce} onClick={props.scroll}>
                   I dont care , just show me skills !
