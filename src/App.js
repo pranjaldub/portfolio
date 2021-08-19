@@ -14,10 +14,44 @@ function RenderMain(props) {
     const element = document.getElementById("skills");
     element.scrollIntoView();
   };
+  //scroll to about
+  const scrollToAbout = () => {
+    const element = document.getElementById("about");
+    element.scrollIntoView();
+  };
+
+  //scroll to education
+  const scrollToEducation = () => {
+    const element = document.getElementById("education");
+    element.scrollIntoView();
+  };
+  //scroll to prrojects
+  const scrollToProjects = () => {
+    const element = document.getElementById("projects");
+    element.scrollIntoView();
+  };
+
+  //scroll to skills
+  const scrollToSkills = () => {
+    const element = document.getElementById("skills");
+    element.scrollIntoView();
+  };
+  //to connect
+  const scrollToSocial = () => {
+    const element = document.getElementById("social");
+    element.scrollIntoView();
+  };
+  const scrollobj = {
+    toAbout: scrollToAbout,
+    toEducation: scrollToEducation,
+    toProjects: scrollToProjects,
+    toSkills: scrollToSkills,
+    toSocial: scrollToSocial,
+  };
   return (
     <Fragment>
       <section id={"header"}>
-        <Header scroll={scroll}></Header>
+        <Header scroll={scroll} scrollobj={scrollobj}></Header>
       </section>
       <section id={"education"}>
         <Education></Education>

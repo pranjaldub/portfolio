@@ -50,7 +50,8 @@ const About = () => {
           becoming a ML Practitioner but in recent months with exposure to web
           development ,{" "}
           <span className={classes.color}>
-            Now share my time with React and Angular
+            Now I started sharing my interest with React too. Thats two
+            completely different domains , but they work together !
           </span>
           .
         </p>
@@ -97,12 +98,12 @@ const About = () => {
             It was third year when I started AI{" "}
           </span>
           taking help from life saviour Google.<br></br>You would be thinking ,
-          why not seek guidance, right? Actually , I's having a hard time
+          why not seek guidance, right? Actually , I was having a hard time
           believing how much this field has grown in recent years/months. Three
           years back ,{" "}
           <span className={classes.color}>
             it was a rare to see AI practitioners walking past just like
-            ordinary people !
+            ordinary people , a real example of people following the trend !
           </span>{" "}
           Yes , it was that rare , or maybe I wasnt fully aware (I can prove
           this point easily , just imagining playing day and night for two years
@@ -142,7 +143,7 @@ const About = () => {
           </button>
         </div>
 
-        <ul className={classes["social"]}>
+        <ul className={classes["social"]} id="social">
           <li>
             <a href="https://github.com/pranjaldub">Github</a>
           </li>

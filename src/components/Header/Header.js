@@ -133,10 +133,30 @@ const Header = (props) => {
                       <span onClick={func} className={classes.headerElements}>
                         Education
                       </span>
-                      <span className={classes.headerElements}>Tech Stack</span>
-                      <span className={classes.headerElements}>Projects</span>
-                      <span className={classes.headerElements}>Connect</span>
-                      <span className={classes.headerElements}>About</span>
+                      <span
+                        className={classes.headerElements}
+                        onClick={props.scrollobj.toSkills}
+                      >
+                        Tech Stack
+                      </span>
+                      <span
+                        className={classes.headerElements}
+                        onClick={props.scrollobj.toProjects}
+                      >
+                        Projects
+                      </span>
+                      <span
+                        className={classes.headerElements}
+                        onClick={props.scrollobj.toSocial}
+                      >
+                        Connect
+                      </span>
+                      <span
+                        className={classes.headerElements}
+                        onClick={props.scrollobj.toAbout}
+                      >
+                        About
+                      </span>
                     </div>
                   </Animated>
                   <div className={classes.ConfigureAvatar}>
