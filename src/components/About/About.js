@@ -11,7 +11,7 @@ const About = () => {
     );
   };
   const url =
-    "https://drive.google.com/file/d/17-BOC8jsA05968Qrr5KJudL-Nr1Qq8re/view?usp=sharing";
+    "https://drive.google.com/file/d/1DypvnGCu3Jpti0t3Phehg_i-LVaXMJHj/view?usp=sharing";
   return (
     <div className={classes.about}>
       <header className={classes.masthead}>

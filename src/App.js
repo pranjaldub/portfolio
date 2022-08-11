@@ -8,6 +8,7 @@ import TechStack from "./components/TechStack/TechStack";
 import Projects from "./components/Projects/Projects";
 import Social from "./Social";
 import About from "./components/About/About";
+import Certifications from "./components/Certifications/Certifications";
 import classes from "./Social.module.css";
 function RenderMain(props) {
   const scroll = () => {
@@ -61,6 +62,9 @@ function RenderMain(props) {
       </section>
       <section id={"projects"}>
         <Projects></Projects>
+      </section>
+      <section>
+        <Certifications></Certifications>
       </section>
       <section id={"about"}>
         <About></About>
