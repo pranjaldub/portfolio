@@ -136,7 +136,7 @@ const About = () => {
             data-content="View Resume"
             onClick={() => {
               window.location.href =
-                "https://drive.google.com/open?id=17-BOC8jsA05968Qrr5KJudL-Nr1Qq8re";
+                "https://drive.google.com/file/d/1DypvnGCu3Jpti0t3Phehg_i-LVaXMJHj/view?usp=sharing";
             }}
           >
             Download Resume
