@@ -63,9 +63,9 @@ function RenderMain(props) {
       <section id={"projects"}>
         <Projects></Projects>
       </section>
-      <section>
+      {/* <section>
         <Certifications></Certifications>
-      </section>
+      </section> */}
       <section id={"about"}>
         <About></About>
       </section>
